@@ -1,0 +1,50 @@
+mounth = int(input('Введите месяц года целым числом от 1 до 12 : '))
+
+
+mounth_year = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+
+try:
+    mounth > 12
+    print(mounth_year[mounth - 1])
+
+    if mounth >= 1  and mounth <= 2:
+        print('Зима')
+    if mounth > 2 and mounth <= 5:
+        print('Весна')
+    if mounth > 5 and mounth <= 8:
+        print('Лето')
+    if mounth > 8 and mounth <= 11:
+        print('Осень')
+    if mounth == 12:
+        print('Зима')
+    else:
+        print('У природы нет плохой погоды')
+
+except IndexError:
+    print('Введите число от "1 до 12 "')
+
+
+
+
+mounth = int(input('Введите месяц года целым числом от 1 до 12 : '))
+mounth_year = ('Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь')
+
+try:
+    mounth > 12
+    print(mounth_year[mounth - 1])
+
+    if mounth >= 1  and mounth <= 2:
+        print('Зима')
+    if mounth > 2 and mounth <= 5:
+        print('Весна')
+    if mounth > 5 and mounth <= 8:
+        print('Лето')
+    if mounth > 8 and mounth <= 11:
+        print('Осень')
+    if mounth == 12:
+        print('Зима')
+    else:
+        print('У природы нет плохой погоды')
+
+except IndexError:
+    print('Введите число от "1 до 12 "')

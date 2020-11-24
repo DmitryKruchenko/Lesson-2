@@ -1,0 +1,21 @@
+i = int(input('Ввведите сколько элементов списка будете вводить: '))
+print(i)
+my_list = []
+for m in range(0, i):
+    m = input('Введите значение списка: ')
+    my_list.append(m)
+print(my_list)
+n = 0
+print(my_list[n])
+if i % 2 == 0:
+    while n < i:
+        my_list.insert(n, my_list[n+1])
+        my_list.pop((n+2))
+        n  = n + 2
+    print(my_list)
+else:
+    while n < (i - 1):
+        my_list.insert(n, my_list[n + 1])
+        my_list.pop((n + 2))
+        n = n + 2
+    print(my_list)

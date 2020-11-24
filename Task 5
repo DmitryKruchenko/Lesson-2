@@ -1,0 +1,20 @@
+reit_list = [2, 4, 5, 7, 9]
+print(reit_list)
+reit_list_copy = reit_list
+
+i = 0
+while (i < 2 ):
+    number = int(input('Введите целое число от  0 до 9: ' ))
+    len_number = len(reit_list_copy)
+    j = 0
+    while j < len_number:
+        if (number <= (reit_list_copy[j])):
+            #print(reit_list_copy[j])
+            reit_list_copy.insert((j), number)
+            break
+        else:
+            j = j +1
+
+
+    i = i + 1
+    print(reit_list_copy)

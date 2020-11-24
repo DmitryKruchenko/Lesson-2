@@ -1,0 +1,78 @@
+my_str = input('Введите любую последовательность символов:  ')
+print(my_str)
+str_len = len(my_str)
+#print (str_len)
+
+my_str_copy = my_str
+
+#new_my_str = my_str
+
+#my_str_copy = list(my_str_copy.split())
+#my_str_copy_base = my_str_copy
+
+#for el in range(0, len(my_str_copy)):
+    #if (len(my_str_copy[el]) <=10):
+      #  print(my_str_copy[el])
+    #else:
+       # n = (len(my_str_copy[el]) // 10)
+       # print (n)
+       # my_str_copy_work = (my_str_copy[el].insert(10, ''))
+        #my_str_copy[el] = my_str_copy[el].split()
+       # break
+
+#print(len(my_str_copy))
+
+#iter = int(len(my_str_copy))             # my_str_copy остается строкой для функций СТРОКА
+#my_str_copy_list = my_str_copy.split()   # для функций типа СПИСОК
+#print( my_str_copy_list)
+#print(iter)
+#i = 0
+#while (i <= iter):
+ #   j = 0
+  #  while (j <= 9):
+    #    if (my_str_copy[j] != ' '):
+
+            #print (my_str_copy[i])
+      #      i = i + 1
+      #  else:
+      #      new_my_str_1 = print()
+
+   # else:
+     #   my_str_copy = my_str_copy_list.insert(i, 'b')
+
+      #  i = i + 1
+#print(my_str_copy)
+#print(len(my_str_copy))
+my_str_copy_list = my_str_copy.split()    # яыляется списком
+#print(my_str_copy_list)
+#print(len(my_str_copy_list))              # длин полученного списка
+my_str_copy_list1 = my_str_copy_list[0]   # уже является строкой
+#print(my_str_copy_list1)
+#print(len(my_str_copy_list1))             # длина строки - элемента списка
+
+i = 0
+while (i < len(my_str_copy_list)):
+
+    if (len(my_str_copy_list[i])) <= 10:
+        print(my_str_copy_list[i])
+
+    else:
+        j = 0
+        n = len(my_str_copy_list[i]) // 10
+        #print(len(my_str_copy_list[i]))
+        #print(n)
+
+
+        while j <= n:
+            str1 = my_str_copy_list[i]
+            str1 = str1[(j * 10): (j * 10 + 10)]
+            print(str1)
+            j = j + 1
+
+
+    i = i + 1
+
+
+
+
+

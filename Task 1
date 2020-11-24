@@ -1,0 +1,13 @@
+my_list = [True, 'thgl', 2, 3, 43.5, 3.4]
+print(my_list)
+numb_list = len(my_list)
+print(numb_list)
+i = 0
+while i < numb_list:
+    print (type(my_list[i]))
+    i = i + 1
+
+
+#for i in my_list:
+  #  print(type(my_list[i]))
+#  ХЗ , for  не желает работать от слова совсем, не хочу тратить время
